@@ -29,6 +29,42 @@ BigInt::BigInt(const BigInt& other) {
 }
 
 BigInt::BigInt(int number) {
+    BigInt temp = BigInt(std::to_string(number));
+    is_positive = temp.is_positive;
+    size = temp.size;
+    digits = new unsigned char[size];
+    for (size_t i = 0; i < size; ++i) {
+        digits[i] = temp.digits[i];
+    }
+}
+
+BigInt::BigInt(long int number) {
+    if (number < 0) {
+        is_positive = false;
+        number = -number;
+    } else {
+        is_positive = true;
+    }
+
+    if (number == 0) {
+        size = 1;
+        digits = new unsigned char[1]{0};
+        return;
+    }
+    int temp = number;
+    size = 0;
+    while (temp > 0) {
+        temp /= 10;
+        size++;
+    }
+    digits = new unsigned char[size];
+    for (size_t i = 0; i < size; ++i) {
+        digits[i] = number % 10;
+        number /= 10;
+    }
+}
+
+BigInt::BigInt(long long int number) {
     if (number < 0) {
         is_positive = false;
         number = -number;
@@ -63,7 +99,7 @@ void BigInt::CopyLine(const std::string& line) {
         digits[i] = line[line.length() - 1 - i] - '0';
 }
 
-BigInt& BigInt::DeleteZero() {
+BigInt BigInt::DeleteZero() {
     while (digits[size - 1] == 0 && size > 1)
         size--;
     return *this;
@@ -252,4 +288,18 @@ BigInt BigInt::operator=(const BigInt& other) {
     digits = new unsigned char[size];
     for (size_t i = 0; i < size; ++i) digits[i] = other.digits[i];
     return *this;
+}
+
+BigInt::operator std::string() const {
+    std::string str;
+    if (!is_positive && !(size == 1 && digits[0] == 0))
+        str.push_back('-');
+    for (int i = size - 1; i >= 0; --i)
+        str.push_back('0' + digits[i]);
+    return str;
+}
+
+std::ostream& operator<<(std::ostream& cout, const BigInt& num) {
+    cout << static_cast<std::string>(num);
+    return cout;
 }

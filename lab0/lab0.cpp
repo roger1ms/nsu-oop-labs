@@ -109,8 +109,14 @@ public:
 };
 
 int main(int argc, char* argv[]) {
-	int b = 5;
-	int a = b;
-	b++;
-	printf("%d", a);
+	setlocale(LC_ALL,"Russian");
+    if (argc != 3) {
+        std::cerr << "Wrong input files" << std::endl;
+        return 1;
+    }
+    std::string inputFile = argv[1];
+    std::string outputFile = argv[2];
+	
+	ProgramCollector collector;
+	collector.Make(inputFile, outputFile);
 }

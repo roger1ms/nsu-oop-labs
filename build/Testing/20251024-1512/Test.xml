@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20251024-1512-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.30.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-78N5HTR"
+	OSRelease=" Personal"
+	OSVersion=" (Build 26100)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="0"
+	ModelID="0"
+	ProcessorCacheSize="0"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="23705"
+	TotalPhysicalMemory="15769"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2300"
+	>
+	<Testing>
+		<StartDateTime>Oct 25 00:43 [NON-UTF-8-BYTE-0xCD][NON-UTF-8-BYTE-0xEE][NON-UTF-8-BYTE-0xE2][NON-UTF-8-BYTE-0xEE][NON-UTF-8-BYTE-0xF1][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xE1][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xF0][NON-UTF-8-BYTE-0xF1][NON-UTF-8-BYTE-0xEA][NON-UTF-8-BYTE-0xEE][NON-UTF-8-BYTE-0xE5] [NON-UTF-8-BYTE-0xF1][NON-UTF-8-BYTE-0xF2][NON-UTF-8-BYTE-0xE0][NON-UTF-8-BYTE-0xED][NON-UTF-8-BYTE-0xE4][NON-UTF-8-BYTE-0xE0][NON-UTF-8-BYTE-0xF0][NON-UTF-8-BYTE-0xF2][NON-UTF-8-BYTE-0xED][NON-UTF-8-BYTE-0xEE][NON-UTF-8-BYTE-0xE5] [NON-UTF-8-BYTE-0xE2][NON-UTF-8-BYTE-0xF0][NON-UTF-8-BYTE-0xE5][NON-UTF-8-BYTE-0xEC][NON-UTF-8-BYTE-0xFF]</StartDateTime>
+		<StartTestTime>1761327792</StartTestTime>
+		<TestList>
+			<Test>./BigIntTest.StreamOutput</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>BigIntTest.StreamOutput</Name>
+			<Path>.</Path>
+			<FullName>./BigIntTest.StreamOutput</FullName>
+			<FullCommandLine>C:\Users\olegt\Desktop\nsu-oop-labs\build\BigInt_tests.exe "--gtest_filter=BigIntTest.StreamOutput" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0173169</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>C:\Users\olegt\Desktop\nsu-oop-labs\build\BigInt_tests.exe "--gtest_filter=BigIntTest.StreamOutput" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkE1rwzAMhu/+FTo2B4ftWuhhW0cZg3Yk6ykOxU3UYOZYwZa3v798lK4dBKqTZD2W3ldZdM64Blpt3CKBk6cWXpZqH9AHRRYbVmsMX0ydciFKok5afQzqGI2t1aHGLqiGqLHIGFgGX12VaiyH7DDMT6tKbIlxCZsRgc++AydjGT2s4Nk0b46HtzRnj7rdRe4ii2J1iRKys95H4PHzoPech2gYU1HIS5SwsXTUduqj+zaeXIuuZ5Fl7P7B1zP/xIgCsv0WxijnRU4A7N7nIVg8QBuSe5ZOKDCxtom4zxOj9rKmH3d7sblLgdcuvd3Tm/h4yvPX9eB0YlPxC6syskE=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Oct 25 00:43 [NON-UTF-8-BYTE-0xCD][NON-UTF-8-BYTE-0xEE][NON-UTF-8-BYTE-0xE2][NON-UTF-8-BYTE-0xEE][NON-UTF-8-BYTE-0xF1][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xE1][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xF0][NON-UTF-8-BYTE-0xF1][NON-UTF-8-BYTE-0xEA][NON-UTF-8-BYTE-0xEE][NON-UTF-8-BYTE-0xE5] [NON-UTF-8-BYTE-0xF1][NON-UTF-8-BYTE-0xF2][NON-UTF-8-BYTE-0xE0][NON-UTF-8-BYTE-0xED][NON-UTF-8-BYTE-0xE4][NON-UTF-8-BYTE-0xE0][NON-UTF-8-BYTE-0xF0][NON-UTF-8-BYTE-0xF2][NON-UTF-8-BYTE-0xED][NON-UTF-8-BYTE-0xEE][NON-UTF-8-BYTE-0xE5] [NON-UTF-8-BYTE-0xE2][NON-UTF-8-BYTE-0xF0][NON-UTF-8-BYTE-0xE5][NON-UTF-8-BYTE-0xEC][NON-UTF-8-BYTE-0xFF]</EndDateTime>
+		<EndTestTime>1761327792</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

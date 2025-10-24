@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 
 class BigInt {
 public:
@@ -10,10 +11,12 @@ public:
     BigInt(const std::string& line);
     BigInt(const BigInt& other);
     BigInt(int other);
+    BigInt(long int other);
+    BigInt(long long int other);
     ~BigInt();
 
     void CopyLine(const std::string& line);
-    BigInt& DeleteZero();
+    BigInt DeleteZero();
 
     BigInt operator-() const;
     BigInt operator+(const BigInt& other) const;
@@ -33,36 +36,7 @@ public:
 
     BigInt operator=(const BigInt& other);
 
-    template <typename T>
-    BigInt operator+(T other) const { return *this + BigInt(std::to_string(other)); }
-
-    template <typename T>
-    BigInt operator-(T other) const { return *this - BigInt(std::to_string(other)); }
-
-    template <typename T>
-    BigInt operator*(T other) const { return *this * BigInt(std::to_string(other)); }
-
-    template <typename T>
-    bool operator<(T other) const { return *this < BigInt(std::to_string(other)); }
-
-    template <typename T>
-    bool operator>(T other) const { return *this > BigInt(std::to_string(other)); }
-
-    template <typename T>
-    bool operator<=(T other) const { return *this <= BigInt(std::to_string(other)); }
-
-    template <typename T>
-    bool operator>=(T other) const { return *this >= BigInt(std::to_string(other)); }
-
-    template <typename T>
-    BigInt operator+=(T other) { return *this += BigInt(std::to_string(other)); }
+    operator std::string() const;
     
-    template <typename T>
-    BigInt operator-=(T other) { return *this -= BigInt(std::to_string(other)); }
-    
-    template <typename T>
-    BigInt operator*=(T other) { return *this *= BigInt(std::to_string(other)); }
-    
-    template <typename T>
-    BigInt operator/=(T other) { return *this /= BigInt(std::to_string(other)); }
 };
+std::ostream& operator<<(std::ostream& os, const BigInt& num);

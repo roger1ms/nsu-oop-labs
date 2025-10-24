@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/olegt/Desktop/nsu-oop-labs/lab1/build/BigInt_tests[1]_tests.cmake")
+  include("C:/Users/olegt/Desktop/nsu-oop-labs/lab1/build/BigInt_tests[1]_tests.cmake")
+else()
+  add_test(BigInt_tests_NOT_BUILT BigInt_tests_NOT_BUILT)
+endif()

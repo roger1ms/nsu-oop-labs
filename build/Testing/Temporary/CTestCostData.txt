@@ -1,0 +1,15 @@
+run_tests_NOT_BUILT 0 0
+BigIntTest.ConstructFromString 2 0.0176364
+BigIntTest.CopyAndSign 2 0.0175819
+BigIntTest.Addition 10 0.0214306
+BigIntTest.Subtraction 11 0.018332
+BigIntTest.Multiplication 11 0.0185242
+BigIntTest.Division 10 0.0194085
+BigIntTest.Comparison 10 0.0184148
+BigIntTest.StreamOutput 10 0.0175363
+BigIntTest.FromStringToBigInt 8 0.0168983
+BigIntTest.IsSignIsCorrect 8 0.0165942
+BigIntTest.CheckSize 8 0.0176365
+BigIntTest.Overflow 7 0.0173009
+BigIntTest.Increment 5 0.0172297
+---

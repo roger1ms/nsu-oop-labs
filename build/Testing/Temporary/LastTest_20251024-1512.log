@@ -1,0 +1,30 @@
+Start testing: Oct 25 00:43 Новосибирское стандартное время
+----------------------------------------------------------
+11/11 Testing: BigIntTest.StreamOutput
+11/11 Test: BigIntTest.StreamOutput
+Command: "C:/Users/olegt/Desktop/nsu-oop-labs/build/BigInt_tests.exe" "--gtest_filter=BigIntTest.StreamOutput" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/olegt/Desktop/nsu-oop-labs/build
+"BigIntTest.StreamOutput" start time: Oct 25 00:43 Новосибирское стандартное время
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\olegt\Desktop\nsu-oop-labs\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = BigIntTest.StreamOutput
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BigIntTest
+[ RUN      ] BigIntTest.StreamOutput
+[       OK ] BigIntTest.StreamOutput (0 ms)
+[----------] 1 test from BigIntTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"BigIntTest.StreamOutput" end time: Oct 25 00:43 Новосибирское стандартное время
+"BigIntTest.StreamOutput" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 25 00:43 Новосибирское стандартное время
