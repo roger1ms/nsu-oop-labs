@@ -15,7 +15,6 @@ int main() {
     BigInt d = - c;
     std::cout << "a = " << a << std::endl;
     std::cout << "b = " << b << std::endl;
-    std::cout << "b = " << d << std::endl;
     std::string s = static_cast<std::string>(a);
     std::cout << "String representation: " << s << std::endl;
     return 0;
