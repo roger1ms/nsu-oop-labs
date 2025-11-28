@@ -9,13 +9,10 @@ void printBigInt(const BigInt& num) {
 
 int main() {
     BigInt a("12345678901234567890");
-    BigInt b("-987654321");
-    BigInt c = INT_MIN;
-    c = c + 4;
-    BigInt d = - c;
+    BigInt b("10");
+    BigInt c = a * b;
     std::cout << "a = " << a << std::endl;
     std::cout << "b = " << b << std::endl;
-    std::string s = static_cast<std::string>(a);
-    std::cout << "String representation: " << s << std::endl;
+    std::cout << c;
     return 0;
 }

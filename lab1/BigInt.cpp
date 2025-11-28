@@ -38,55 +38,23 @@ BigInt::BigInt(int number) {
     }
 }
 
-BigInt::BigInt(long int number) {
-    if (number < 0) {
-        is_positive = false;
-        number = -number;
-    } else {
-        is_positive = true;
-    }
-
-    if (number == 0) {
-        size = 1;
-        digits = new unsigned char[1]{0};
-        return;
-    }
-    int temp = number;
-    size = 0;
-    while (temp > 0) {
-        temp /= 10;
-        size++;
-    }
+BigInt::BigInt( long int number) {
+    BigInt temp = BigInt(std::to_string(number));
+    is_positive = temp.is_positive;
+    size = temp.size;
     digits = new unsigned char[size];
     for (size_t i = 0; i < size; ++i) {
-        digits[i] = number % 10;
-        number /= 10;
+        digits[i] = temp.digits[i];
     }
 }
 
 BigInt::BigInt(long long int number) {
-    if (number < 0) {
-        is_positive = false;
-        number = -number;
-    } else {
-        is_positive = true;
-    }
-
-    if (number == 0) {
-        size = 1;
-        digits = new unsigned char[1]{0};
-        return;
-    }
-    int temp = number;
-    size = 0;
-    while (temp > 0) {
-        temp /= 10;
-        size++;
-    }
+    BigInt temp = BigInt(std::to_string(number));
+    is_positive = temp.is_positive;
+    size = temp.size;
     digits = new unsigned char[size];
     for (size_t i = 0; i < size; ++i) {
-        digits[i] = number % 10;
-        number /= 10;
+        digits[i] = temp.digits[i];
     }
 }
 
@@ -169,32 +137,40 @@ BigInt BigInt::operator-(const BigInt& second_digit) const {
 BigInt BigInt::operator*(const BigInt& second_digit) const {
     BigInt a = *this;
     BigInt b = second_digit;
-    if (a < b) {
-        a = second_digit;
-        b = *this;
-    }
-    size_t result_size = a.size + b.size;
-    unsigned char* result_digits = new unsigned char[result_size]{0};
+    if (a < b) std::swap(a, b);
 
-    for (size_t i = 0; i < b.size; i++)
+    size_t result_size = a.size + b.size;
+    std::vector<long long> result_digits(result_size, 0);
+
+    for (size_t i = 0; i < b.size; i++) {
         for (size_t j = 0; j < a.size; j++) {
-            int composition = b.digits[i] * a.digits[j];
-            result_digits[i + j] += composition;
+            result_digits[i + j] += 1LL * b.digits[i] * a.digits[j];
         }
+    }
 
     for (size_t k = 0; k < result_size - 1; k++) {
-        result_digits[k + 1] += result_digits[k] / 10;
-        result_digits[k] %= 10;
+        if (result_digits[k] >= 10) {
+            result_digits[k + 1] += result_digits[k] / 10;
+            result_digits[k] %= 10;
+        }
     }
+
+    while (result_size > 1 && result_digits[result_size - 1] == 0)
+        result_size--;
 
     BigInt result("");
     delete[] result.digits;
-    result.digits = result_digits;
+    result.digits = new unsigned char[result_size];
+    for (size_t i = 0; i < result_size; i++)
+        result.digits[i] = static_cast<unsigned char>(result_digits[i]);
+
     result.size = result_size;
     result.is_positive = (is_positive == second_digit.is_positive);
     result.DeleteZero();
+
     return result;
 }
+
 
 BigInt BigInt::operator/(const BigInt& second_digit) const {
     BigInt a = *this;
