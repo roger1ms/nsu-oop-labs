@@ -15,6 +15,8 @@ public:
         creators[name] = []() -> Strategy* { return new T(); };
     }
 
+    std::vector<std::string> getAvailableStrategies() const;
+    
     Strategy* create(const std::string& name) const;
     
     void printAvailableStrategies() const;

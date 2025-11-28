@@ -84,7 +84,7 @@ public:
 
     char makeMove() override {
         if (movesInMode >= maxMovesInMode) {
-            maxMovesInMode = rand() % 6 + 1;  // от 1 до 3 ходов
+            maxMovesInMode = rand() % 6 + 1;  // от 1 до 6 ходов
             movesInMode = 0;
             return 'C';
         }

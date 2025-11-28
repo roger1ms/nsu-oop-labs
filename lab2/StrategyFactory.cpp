@@ -24,6 +24,14 @@ Strategy* StrategyFactory::create(const std::string& name) const {
     return nullptr;
 }
 
+std::vector<std::string> StrategyFactory::getAvailableStrategies() const {
+    std::vector<std::string> result;
+    for (const auto& pair : creators) {
+        result.push_back(pair.first);
+    }
+    return result;
+}
+
 void StrategyFactory::printAvailableStrategies() const {
     std::cout << "Available strategies:" << std::endl;
     std::cout << "  allc         - Always cooperate" << std::endl;
