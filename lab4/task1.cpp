@@ -60,7 +60,7 @@ std::ostream& operator<<(std::ostream& os, const std::tuple<Args...>& t) {
 }
 int main() {
     setlocale(LC_ALL,"Russian");
-    std::cout << "=== Тест базовой реализации (C++11) ===\n";
+    std::cout << "TEST\n";
     
     std::tuple<int, std::string, double> t1 = std::make_tuple(5, "abcd", 3.14);
     std::cout << "t1 = " << t1 << std::endl;
