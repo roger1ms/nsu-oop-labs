@@ -1,0 +1,21 @@
+# ninja log v6
+3	149	7866622608826019	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	9e9ae5ef1f6bdc66
+3	149	7866622608826019	C:/Users/olegt/Desktop/nsu-oop-labs/lab4/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	9e9ae5ef1f6bdc66
+150	16446	7866622771771406	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	6c7c3073b62d2aae
+150	16446	7866622771771406	C:/Users/olegt/Desktop/nsu-oop-labs/lab4/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	6c7c3073b62d2aae
+16446	16633	7866622773657183	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	dedbc7568a13de89
+16446	16633	7866622773657183	C:/Users/olegt/Desktop/nsu-oop-labs/lab4/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	dedbc7568a13de89
+16633	16802	7866622775355374	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	2169e208ea995f
+16633	16802	7866622775355374	C:/Users/olegt/Desktop/nsu-oop-labs/lab4/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	2169e208ea995f
+16802	16983	7866622777156288	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	4a7080f1b9271118
+16802	16983	7866622777156288	C:/Users/olegt/Desktop/nsu-oop-labs/lab4/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	4a7080f1b9271118
+16983	17131	7866622778648635	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	b31881eace58f108
+16983	17131	7866622778648635	C:/Users/olegt/Desktop/nsu-oop-labs/lab4/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	b31881eace58f108
+17131	17296	7866622780300659	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	e36af28a727a99
+17131	17296	7866622780300659	C:/Users/olegt/Desktop/nsu-oop-labs/lab4/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	e36af28a727a99
+17296	17461	7866622781953940	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	cffb430b24d350d9
+17296	17461	7866622781953940	C:/Users/olegt/Desktop/nsu-oop-labs/lab4/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	cffb430b24d350d9
+17462	17710	7866622784428759	CMakeFiles/googletest-populate-complete	b2e07f7a0569ee87
+17462	17710	7866622784428759	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	b2e07f7a0569ee87
+17462	17710	7866622784428759	C:/Users/olegt/Desktop/nsu-oop-labs/lab4/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	b2e07f7a0569ee87
+17462	17710	7866622784428759	C:/Users/olegt/Desktop/nsu-oop-labs/lab4/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	b2e07f7a0569ee87
