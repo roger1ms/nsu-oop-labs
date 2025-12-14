@@ -1,3 +1,0 @@
-C:\msys64\mingw64\bin\cmake.exe -E rm -f CMakeFiles\BigInt_tests.dir/objects.a
-C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\BigInt_tests.dir/objects.a @CMakeFiles\BigInt_tests.dir\objects1.rsp
-C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\BigInt_tests.dir/objects.a -Wl,--no-whole-archive -o BigInt_tests.exe -Wl,--out-implib,libBigInt_tests.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\BigInt_tests.dir\linkLibs.rsp
